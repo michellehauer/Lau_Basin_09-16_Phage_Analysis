@@ -41,10 +41,12 @@ cd contigs
 python3 get_sequence_lengths.py
 
 # Obtain geNomad taxonomic classifications
+source activate genomad
 for f in *fna
 do
 genomad annotate ${f} genomad_output genomad_db
 done
+conda deactivate
 
 cd ../../
 mkdir drep
