@@ -9,14 +9,12 @@ done
 python3 count_sequences_per_MAG.py
 
 ## put all spacer fa sequences from MinCED in one directory
-for f in `cat MAGs.list`
-do
-minced -spacers MAGs/${f} output_${f}.txt output_${f}.gff
-done
+mkdir spacers
+cd spacers
+ln -s ../*fa .
 
 ### concatenate all spacers files but add the file name to the headers in the process
 ## Create or overwrite the output file
-cd spacers
 output_file="concatenated.fa"
 
 ## Remove the output file if it exists to start fresh
