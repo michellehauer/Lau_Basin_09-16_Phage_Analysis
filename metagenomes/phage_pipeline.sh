@@ -53,6 +53,6 @@ mkdir drep
 cd drep
 ## Run dRep to obtain species groups from phage in metagenomes
 source activate drep
-dRep dereplicate --S_algorithm ANImf --SkipMash -nc .5 -sa .95 -l 10000 -N50W 0 -sizeW 1 --ignoreGenomeQuality --clusterAlg single MAGs_drep_output -g {path_to_phage_contigs}/*fna
+dRep dereplicate --S_algorithm ANImf --SkipMash -nc .5 -sa .95 -l 10000 -N50W 0 -sizeW 1 --ignoreGenomeQuality --clusterAlg single metagenome_drep_output -g {path_to_phage_contigs}/*fna
 conda deactivate
 
