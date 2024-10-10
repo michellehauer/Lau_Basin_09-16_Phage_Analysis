@@ -36,7 +36,7 @@ fi
 done < ${f}
 done
 
-# get phage contig lengths for all contigs, 2009-2022:
+# get phage contig lengths for all contigs:
 cd contigs
 python3 get_sequence_lengths.py
 
