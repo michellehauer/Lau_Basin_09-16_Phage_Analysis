@@ -1,4 +1,6 @@
-## This code is pulled from the dRep program https://github.com/MrOlm/drep/blob/master/drep/d_analyze.py, also using a forked radialtree to circularize the final dendrogram
+## Original code from dRep: https://github.com/MrOlm/drep/blob/master/drep/d_analyze.py
+## Using a forked radialtree (see radialtree_fork.py) to circularize the final dendrogram
+## Original Author: MrOlm, Matt Olm
 
 #!/usr/bin/env python3
 '''
