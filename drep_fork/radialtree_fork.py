@@ -1,3 +1,7 @@
+## Originally from: https://github.com/koonimaru/radialtree/blob/main/radialtree.py
+## Original Author: koonimaru
+## Used with drep to circularize the output dendogram
+
 import scipy.cluster.hierarchy as sch
 import matplotlib.pyplot as plt
 from matplotlib.patches import Circle
